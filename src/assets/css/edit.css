@@ -17,14 +17,9 @@ a:focus,
 .p-panelmenu .p-panelmenu-content .p-menuitem .p-menuitem-link:focus,
 .p-chips .p-chips-multiple-container:not(.p-disabled).p-focus,
 .p-datepicker table td > span:focus,
-.p-datepicker:not(.p-disabled)
-  table
-  td
-  span:not(.p-highlight):not(.p-disabled):focus,
+.p-datepicker:not(.p-disabled) table td span:not(.p-highlight):not(.p-disabled):focus,
 .p-radiobutton .p-radiobutton-box:not(.p-disabled).p-focus,
-.p-accordion
-  .p-accordion-header:not(.p-disabled)
-  .p-accordion-header-link:focus,
+.p-accordion .p-accordion-header:not(.p-disabled) .p-accordion-header-link:focus,
 .p-panel .p-panel-header .p-panel-header-icon:focus,
 :is(.p-splitbutton):is(
     .p-button-secondary,
@@ -58,12 +53,8 @@ a:focus,
 .p-multiselect:not(.p-disabled).p-focus,
 .p-toast .p-toast-message .p-toast-icon-close:focus,
 .p-carousel .p-carousel-content :is(.p-carousel-prev, .p-carousel-next):focus,
-.p-sidebar
-  .p-sidebar-header
-  :is(.p-sidebar-close, .p-sidebar-icon):enabled:focus,
-.p-panelmenu
-  .p-panelmenu-header:not(.p-disabled):focus
-  .p-panelmenu-header-content,
+.p-sidebar .p-sidebar-header :is(.p-sidebar-close, .p-sidebar-icon):enabled:focus,
+.p-panelmenu .p-panelmenu-header:not(.p-disabled):focus .p-panelmenu-header-content,
 .p-panelmenu .p-panelmenu-header.p-highlight:focus,
 .p-dialog .p-dialog-header .p-dialog-header-icon:focus,
 .p-datatable
