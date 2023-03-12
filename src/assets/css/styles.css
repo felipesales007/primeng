@@ -1,1 +1,167 @@
-/* Você pode adicionar estilos globais a este arquivo e também importar outros arquivos de estilo */
+/* 
+* Você pode adicionar estilos globais a este arquivo
+* e também importar outros arquivos de estilo
+*/
+
+.fe-not-event {
+  pointer-events: none !important;
+}
+
+.fe-mouse {
+  cursor: default !important;
+}
+
+.fe-pointer {
+  cursor: pointer !important;
+}
+
+.fe-nopointer {
+  cursor: not-allowed !important;
+}
+
+.fe-hide {
+  visibility: hidden !important;
+}
+
+.fe-hidden {
+  display: none !important;
+}
+
+.fe-center-y {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.fe-center-x {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.fe-float-l {
+  float: left !important;
+}
+
+.fe-float-r {
+  float: right !important;
+}
+
+.fe-decoration-none,
+.fe-decoration-none .p-button-label {
+  text-decoration: none !important;
+}
+
+.fe-hover:hover {
+  opacity: 0.8;
+}
+
+.fe-on-modal {
+  z-index: 1102 !important;
+}
+
+.fe-ellipsis,
+.fe-ellipsis-default {
+  width: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fe-ellipsis-default {
+  max-width: 27ch;
+}
+
+.fe-line-text-truncate-1,
+.fe-line-text-truncate-2,
+.fe-line-text-truncate-3,
+.fe-line-text-truncate-4,
+.fe-line-text-truncate-5,
+.fe-line-text-truncate-6,
+.fe-line-text-truncate-7,
+.fe-line-text-truncate-8,
+.fe-line-text-truncate-9,
+.fe-line-text-truncate-10,
+.fe-line-text-truncate-11 {
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fe-line-text-truncate-1 {
+  -webkit-line-clamp: 1;
+}
+
+.fe-line-text-truncate-2 {
+  -webkit-line-clamp: 2;
+}
+
+.fe-line-text-truncate-3 {
+  -webkit-line-clamp: 3;
+}
+
+.fe-line-text-truncate-4 {
+  -webkit-line-clamp: 4;
+}
+
+.fe-line-text-truncate-5 {
+  -webkit-line-clamp: 5;
+}
+
+.fe-line-text-truncate-6 {
+  -webkit-line-clamp: 6;
+}
+
+.fe-line-text-truncate-7 {
+  -webkit-line-clamp: 7;
+}
+
+.fe-line-text-truncate-8 {
+  -webkit-line-clamp: 8;
+}
+
+.fe-line-text-truncate-9 {
+  -webkit-line-clamp: 9;
+}
+
+.fe-line-text-truncate-10 {
+  -webkit-line-clamp: 10;
+}
+
+.fe-line-text-truncate-11 {
+  -webkit-line-clamp: 11;
+}
+
+.fe-label-on {
+  margin-top: 18px;
+}
+
+.fe-border {
+  border-radius: 4px;
+}
+
+.fe-outline {
+  outline: 1px solid #dee2e6;
+}
+
+.dark .fe-outline {
+  outline: 1px solid #3f4b5b;
+}
+
+.fe-outline-error {
+  outline: 1px solid #dc3545;
+}
+
+.dark .fe-outline-error {
+  outline: 1px solid #f19ea6;
+}
+
+.fe-border-theme {
+  border-color: #dee2e6;
+}
+
+.dark .fe-border-theme {
+  border-color: #3f4b5b;
+}
