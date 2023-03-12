@@ -1,3 +1,74 @@
 /* 
 * Você pode editar estilos do primeng neste arquivo
 */
+
+.fc-button:focus,
+.p-multiselect-close,
+a:focus,
+.p-scrollpanel .p-scrollpanel-bar:focus,
+.p-message .p-message-close:focus,
+.p-sortable-column:focus,
+.p-paginator-first,
+.p-paginator-prev,
+.p-paginator-page,
+.p-paginator-next,
+.p-paginator-last,
+.p-menu .p-menuitem-link:focus,
+.p-panelmenu .p-panelmenu-content .p-menuitem .p-menuitem-link:focus,
+.p-chips .p-chips-multiple-container:not(.p-disabled).p-focus,
+.p-datepicker table td > span:focus,
+.p-datepicker:not(.p-disabled)
+  table
+  td
+  span:not(.p-highlight):not(.p-disabled):focus,
+.p-radiobutton .p-radiobutton-box:not(.p-disabled).p-focus,
+.p-accordion
+  .p-accordion-header:not(.p-disabled)
+  .p-accordion-header-link:focus,
+.p-panel .p-panel-header .p-panel-header-icon:focus,
+:is(.p-splitbutton):is(
+    .p-button-secondary,
+    .p-button-success,
+    .p-button-info,
+    .p-button-warning,
+    .p-button-help,
+    .p-button-danger
+  )
+  > .p-button:enabled:focus,
+.p-tabview .p-tabview-nav-btn.p-link:focus,
+.p-datatable .p-datatable-tbody > tr > td .p-row-toggler:focus,
+.p-breadcrumb ol li .p-menuitem-link:focus,
+.p-paginator-page.p-highlight:focus,
+.p-button:focus,
+.p-carousel-indicator .p-link:focus,
+.p-inputswitch.p-focus .p-inputswitch-slider,
+.p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box.p-focus,
+.p-inputtext:is(:hover, :enabled:focus),
+.p-tabview .p-tabview-nav li .p-tabview-nav-link:not(.p-disabled):focus,
+:is(.p-button, .p-splitbutton):is(
+    .p-button-secondary,
+    .p-button-success,
+    .p-button-info,
+    .p-button-warning,
+    .p-button-help,
+    .p-button-danger,
+    .p-button-link
+  ):enabled:focus,
+.p-dropdown:not(.p-disabled).p-focus,
+.p-multiselect:not(.p-disabled).p-focus,
+.p-toast .p-toast-message .p-toast-icon-close:focus,
+.p-carousel .p-carousel-content :is(.p-carousel-prev, .p-carousel-next):focus,
+.p-sidebar
+  .p-sidebar-header
+  :is(.p-sidebar-close, .p-sidebar-icon):enabled:focus,
+.p-panelmenu
+  .p-panelmenu-header:not(.p-disabled):focus
+  .p-panelmenu-header-content,
+.p-panelmenu .p-panelmenu-header.p-highlight:focus,
+.p-dialog .p-dialog-header .p-dialog-header-icon:focus,
+.p-datatable
+  .p-datatable-tbody
+  > tr:is(.p-datatable-dragpoint-top, .p-datatable-dragpoint-bottom)
+  > td {
+  box-shadow: none !important;
+}
