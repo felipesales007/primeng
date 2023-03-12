@@ -1,27 +1,57 @@
 # Primeng
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.2.
+![version](https://img.shields.io/badge/version-0.0.0-blue.svg)
 
-## Development server
+Este projeto **frontend** foi gerado com Angular CLI.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Para rodar o projeto em um servidor de desenvolvimento, basta executar os seguintes comandos
 
-## Code scaffolding
+Para fazer download das dependências do Angular:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```
+npm install
+```
 
-## Build
+Para executar o projeto em localhost:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```
+ng serve
+```
 
-## Running unit tests
+O frontend agora deve executar em http://localhost:4200
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Para verificação de tipo, compilação e minificação para produção:
 
-## Running end-to-end tests
+```
+ng build
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Os artefatos de compilação serão armazenados no diretório `dist/`
 
-## Further help
+## Estrutura de código
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Execute `ng generate component-name` para gerar um novo componente. Você também pode usar `ng generate directiva|pipe|service|class|guard|interface|enum|module`.
+
+## Executando testes de unidade
+
+Execute `ng test` para executar os testes de unidade via [Karma](https://karma-runner.github.io).
+
+## Executando testes de ponta a ponta
+
+Execute `ng e2e` para executar os testes de ponta a ponta por meio de uma plataforma de sua escolha. Para usar esse comando, você precisa primeiro adicionar um pacote que implemente recursos de teste de ponta a ponta.
+
+## Mais ajuda
+
+Para obter mais ajuda sobre o Angular CLI, use `ng help` ou confira a página [Visão geral do Angular CLI e referência de comando](https://angular.io/cli).
+
+## [PrimeNG](https://primefaces.org/primeng)
+
+> Este projeto é baseado nos componentes e templates disponibilizados em PrimeNG.
+
+Este projeto é desenvolvido para Angular com os componentes do [PrimeNG](https://primefaces.org/primeng).
+
+<img src="https://avatars.githubusercontent.com/u/65972240" width="250" height="250"  alt=""/>
+
+## Documentação
+
+Link para a [documentação](https://primefaces.org/primeng/setup).
