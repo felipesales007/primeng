@@ -6,9 +6,17 @@ import { AppComponent } from './app.component';
 
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { SobreComponent } from './pages/sobre/sobre.component';
+import { HeaderComponent } from './components/layout/header/header.component';
+import { FooterComponent } from './components/layout/footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, InicioComponent, SobreComponent],
+  declarations: [
+    AppComponent,
+    InicioComponent,
+    SobreComponent,
+    HeaderComponent,
+    FooterComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
