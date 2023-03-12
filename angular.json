@@ -18,9 +18,10 @@
             "main": "src/main.ts",
             "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
-            "assets": ["src/favicon.ico", "src/assets"],
+            "assets": ["src/assets/img/favicon.ico", "src/assets"],
             "styles": [
-              "src/styles.css",
+              "src/assets/css/styles.css",
+              "src/assets/css/edit.css",
               "node_modules/primeicons/primeicons.css",
               "node_modules/primeng/resources/themes/bootstrap4-light-blue/theme.css",
               "node_modules/primeng/resources/primeng.min.css"
@@ -77,8 +78,8 @@
           "options": {
             "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "tsconfig.spec.json",
-            "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.css"],
+            "assets": ["src/assets/img/favicon.ico", "src/assets"],
+            "styles": ["src/assets/css/styles.css", "src/assets/css/edit.css"],
             "scripts": []
           }
         }
