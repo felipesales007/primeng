@@ -1,6 +1,6 @@
 # Consulte http://help.github.com/ignore-files/ para saber mais sobre como ignorar arquivos.
 
-# Compiled output
+# Saída compilada
 /dist
 /tmp
 /out-tsc
@@ -12,7 +12,7 @@ npm-debug.log
 yarn-error.log
 package-lock.json
 
-# IDEs and editors
+# IDEs e editores
 .idea/
 .project
 .classpath
@@ -30,7 +30,7 @@ package-lock.json
 !.vscode/extensions.json
 .history/*
 
-# Miscellaneous
+# Diversos
 /.angular/cache
 .sass-cache/
 /connect.lock
@@ -39,6 +39,6 @@ package-lock.json
 testem.log
 /typings
 
-# System files
+# Arquivos do sistema
 .DS_Store
 Thumbs.db
