@@ -49,16 +49,6 @@ a {
   text-decoration: none;
 }
 
-.main-page {
-  min-height: calc(100vh - 71px);
-  margin: 8px;
-}
-
-.main-panel {
-  min-height: calc(100vh - 127px);
-  margin: 64px 8px 8px 8px;
-}
-
 .page-full {
   min-height: calc(100vh - 71px);
 }
