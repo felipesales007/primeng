@@ -2,6 +2,71 @@
 * Você pode editar estilos do primeng neste arquivo
 */
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--surface-ground);
+  font-family: var(--font-family);
+  color: var(--text-color);
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  margin: 0;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+input[type='number'] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-page {
+  min-height: calc(100vh - 71px);
+  margin: 8px;
+}
+
+.main-panel {
+  min-height: calc(100vh - 127px);
+  margin: 64px 8px 8px 8px;
+}
+
+.page-full {
+  min-height: calc(100vh - 71px);
+}
+
+.p-toast {
+  z-index: 1105;
+}
+
 .fc-button:focus,
 .p-multiselect-close,
 a:focus,
@@ -118,4 +183,192 @@ a:focus,
 
 .dark .p-ripple-danger .p-ink {
   background: rgb(241, 158, 166, 0.3);
+}
+
+.p-divider-solid.p-divider-horizontal:before {
+  border-top-style: solid !important;
+}
+
+.p-divider-solid.p-divider-vertical:before {
+  border-left-style: solid !important;
+}
+
+.p-divider.p-divider-horizontal:before {
+  border-top: 1px var(--surface-border);
+}
+
+.p-divider.p-divider-vertical:before {
+  border-left: 1px var(--surface-border);
+}
+
+.p-dropdown-panel .p-dropdown-header,
+.p-multiselect-panel .p-multiselect-header {
+  padding: 0.75rem !important;
+}
+
+.p-inputtext[type='time']:not(.p-inputtext-sm, .p-inputtext-lg),
+.p-inputtext[type='date']:not(.p-inputtext-sm, .p-inputtext-lg),
+.p-inputtext[type='month']:not(.p-inputtext-sm, .p-inputtext-lg),
+.p-inputtext[type='datetime-local']:not(.p-inputtext-sm, .p-inputtext-lg) {
+  height: 36px;
+}
+
+.p-inputtext[type='time'].placeholder,
+.p-inputtext[type='date'].placeholder,
+.p-inputtext[type='month'].placeholder,
+.p-inputtext[type='datetime-local'].placeholder {
+  color: var(--surface-600);
+}
+
+.no-expander .p-row-toggler {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.p-datatable .p-button-icon-min button {
+  width: 21px !important;
+  height: 21px !important;
+}
+
+.p-datatable .action {
+  padding: 6px 16px !important;
+  text-align: center !important;
+}
+
+.p-datatable .action div {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-datatable .action :is(a, button):not(a button) {
+  margin: 0.2rem;
+}
+
+.p-datatable .action :is(a, button):not(a button):last-child {
+  margin-right: 0;
+}
+
+.p-datatable-reorderablerow-handle:hover {
+  cursor: grab;
+}
+
+.p-datatable-reorderablerow-handle:active {
+  cursor: grabbing;
+}
+
+.p-datatable-resizable-fit .p-datatable-reorderablerow-handle {
+  margin-right: 4px;
+  margin-left: 3px;
+}
+
+.p-datatable-no-header thead th {
+  padding: 0 !important;
+  border-bottom: 1px !important;
+}
+
+.p-datatable-resizable .p-datatable-thead > tr > th,
+.p-datatable-resizable .p-datatable-tfoot > tr > td,
+.p-datatable-resizable .p-datatable-tbody > tr > td {
+  white-space: normal;
+}
+
+.p-dialog-footer button:last-child {
+  margin-right: 0 !important;
+}
+
+.p-toast .p-toast-message .p-toast-icon-close {
+  padding: 1rem;
+}
+
+.p-message .p-message-close {
+  margin-left: 1rem;
+}
+
+.p-message .p-message-text {
+  width: 100%;
+  font-weight: normal !important;
+}
+
+input.only-focus[type='time'],
+input.only-focus[type='date'],
+input.only-focus[type='month'],
+input.only-focus[type='datetime-local'] {
+  position: relative;
+}
+
+.p-inputtext[type='time']::-webkit-calendar-picker-indicator {
+  padding-right: 1px;
+}
+
+input.only-focus[type='time']::-webkit-calendar-picker-indicator,
+input.only-focus[type='date']::-webkit-calendar-picker-indicator,
+input.only-focus[type='month']::-webkit-calendar-picker-indicator,
+input.only-focus[type='datetime-local']::-webkit-calendar-picker-indicator {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-right: 14px;
+  background-position: right;
+  background-size: auto;
+  cursor: pointer;
+}
+
+.p-menuitem-content:not(:hover),
+.p-dropdown-item:not(:hover, .p-highlight) {
+  background: transparent !important;
+}
+
+.p-fieldset {
+  padding: 12px;
+}
+
+.p-fieldset legend a {
+  padding: 0.5rem 1rem !important;
+}
+
+.p-tooltip {
+  max-width: 18.75rem;
+}
+
+.p-multiselect-close {
+  display: none;
+}
+
+.p-multiselect-panel .p-multiselect-header .p-checkbox {
+  margin-left: -4px;
+}
+
+.p-checkbox-box.p-focus:not(.p-highlight) {
+  border: 2px solid #ced4da !important;
+}
+
+.dark .p-checkbox-box.p-focus:not(.p-highlight) {
+  border: 1px solid #3f4b5b !important;
+}
+
+:is(.p-dropdown-items, .p-multiselect-items) .p-highlight.p-focus {
+  background: var(--primary-color) !important;
+}
+
+:is(.p-dropdown-items, .p-multiselect-items)
+  .p-multiselect-item:not(.p-highlight, .p-disabled).p-focus:not(:hover) {
+  background: transparent !important;
+}
+
+@media screen and (min-width: 767px) {
+  .p-datatable .action {
+    padding: 0 !important;
+  }
+
+  .p-datatable .action :is(a, button):not(a button):last-child {
+    margin-right: 0.2rem;
+  }
 }
