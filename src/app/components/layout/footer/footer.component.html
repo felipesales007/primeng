@@ -1,1 +1,18 @@
-<p>footer works!</p>
+<p-menubar class="w-full relative border-noround bottom-0">
+  <!-- direita -->
+  <ng-template pTemplate="start">
+    <div class="flex align-items-center">
+      <img *ngIf="logo" [src]="logo" class="mr-4" height="32" alt="" />
+      <div class="text-color mr-4">{{ title }}</div>
+    </div>
+  </ng-template>
+
+  <!-- esquerda -->
+  <ng-template pTemplate="end">
+    <div class="flex align-items-center justify-content-end">
+      <div *ngIf="title" class="text-sm text-color text-right">
+        {{ copy }} {{ year }}, {{ rights }}
+      </div>
+    </div>
+  </ng-template>
+</p-menubar>
