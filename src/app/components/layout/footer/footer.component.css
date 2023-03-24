@@ -2,17 +2,17 @@
   padding-top: 1px;
 }
 
-.p-menubar {
+::ng-deep .p-menubar {
   height: 54px;
   padding: 16px 16px 17px 16px;
   box-shadow: 0 0 1px 0 rgb(0 0 0 / 75%);
 }
 
-.p-menubar-start,
-.p-menubar-end {
+::ng-deep .p-menubar-start,
+::ng-deep .p-menubar-end {
   width: 50%;
 }
 
-.p-menubar-button {
+::ng-deep .p-menubar-button {
   display: none !important;
 }
