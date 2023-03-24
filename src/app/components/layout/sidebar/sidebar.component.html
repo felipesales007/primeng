@@ -1,0 +1,22 @@
+<p-sidebar [(visible)]="visible" class="layout-sidebar">
+  <!-- título -->
+  <ng-template pTemplate="header">
+    <div class="flex align-items-center">
+      <img *ngIf="logo" [src]="logo" class="mr-4" height="32" alt="" />
+      <div>{{ title }}</div>
+    </div>
+  </ng-template>
+
+  <!-- lista de itens -->
+  <p-panelMenu [model]="model"></p-panelMenu>
+
+  <!-- rodapé -->
+  <div
+    *ngIf="footerTitle || footerLogo"
+    class="w-full surface-section absolute bottom-0 border-top-1 fe-border-theme">
+    <div class="flex align-items-center">
+      <img *ngIf="footerLogo" [src]="footerLogo" class="mr-4" height="32" alt="" />
+      <div>{{ footerTitle }}</div>
+    </div>
+  </div>
+</p-sidebar>

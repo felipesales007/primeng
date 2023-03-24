@@ -1,0 +1,28 @@
+:host ::ng-deep .p-menubar {
+  box-shadow: 0 0 3px 0 rgb(0 0 0 / 35%);
+  border-radius: 0;
+}
+
+:host ::ng-deep .p-menubar-button {
+  display: none !important;
+}
+
+:host ::ng-deep .p-menubar-start {
+  width: 100%;
+}
+
+:host ::ng-deep .p-menu-overlay {
+  top: 45px !important;
+}
+
+:host ::ng-deep .layout-navbar.p-menuitem span {
+  color: var(--text-color) !important;
+}
+
+:host ::ng-deep .layout-navbar.p-menuitem.logout span {
+  color: var(--red-500) !important;
+}
+
+:host ::ng-deep .dark .layout-navbar.p-menuitem.logout span {
+  color: #f19ea6 !important;
+}

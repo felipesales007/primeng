@@ -2,17 +2,18 @@
   padding-top: 1px;
 }
 
-::ng-deep .p-menubar {
+:host ::ng-deep .p-menubar {
   height: 54px;
   padding: 16px 16px 17px 16px;
   box-shadow: 0 0 1px 0 rgb(0 0 0 / 75%);
+  border-radius: 0;
 }
 
-::ng-deep .p-menubar-start,
-::ng-deep .p-menubar-end {
+:host ::ng-deep .p-menubar-start,
+:host ::ng-deep .p-menubar-end {
   width: 50%;
 }
 
-::ng-deep .p-menubar-button {
+:host ::ng-deep .p-menubar-button {
   display: none !important;
 }

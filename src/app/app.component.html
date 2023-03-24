@@ -1,8 +1,20 @@
 <div>
-  <!-- barra -->
-  <app-header />
-
   <!-- menu -->
+  <app-navbar
+    *ngIf="true"
+    [name]="user.nome"
+    [photo]="user.foto"
+    [title]="user.empresa"
+    [logo]="user.logo"
+    [sidebarTitle]="user.empresa"
+    [sidebarLogo]="user.logo"
+    [sidebarFooterTitle]="company.name"
+    [sidebarFooterLogo]="company.logo"
+    [sidebarItems]="menu.data"
+    [sidebarItemsObject]="menu.object">
+  </app-navbar>
+
+  <!-- menu temporário -->
   <nav>
     <a routerLink="/">Início</a>
     <a routerLink="sobre">Sobre</a>
@@ -10,9 +22,9 @@
 
   <!-- corpo -->
   <div class="main-panel">
-    <router-outlet />
+    <router-outlet></router-outlet>
   </div>
 
   <!-- rodapé -->
-  <app-footer [title]="company.name" [logo]="company.logo" />
+  <app-footer [title]="company.name" [logo]="company.logo"></app-footer>
 </div>

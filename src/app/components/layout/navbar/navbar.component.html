@@ -1,0 +1,57 @@
+<!-- menu lateral -->
+<app-sidebar
+  [state]="state"
+  [title]="sidebarTitle"
+  [logo]="sidebarLogo"
+  [footerTitle]="sidebarFooterTitle"
+  [footerLogo]="sidebarFooterLogo"
+  [items]="sidebarItems"
+  [object]="sidebarItemsObject"
+  (clickSidebar)="(clickSidebar)"></app-sidebar>
+
+<!-- menu -->
+<p-menubar [model]="[]" class="w-full fixed border-noround top-0 z-3">
+  <!-- esquerda -->
+  <ng-template pTemplate="start">
+    <div class="flex align-items-center">
+      <button
+        pButton
+        pRipple
+        icon="pi pi-bars"
+        class="p-button-rounded p-button-text text-color mr-3"
+        (click)="state = !state"></button>
+
+      <img *ngIf="logo" [src]="logo" class="mr-4" height="32" alt="" />
+
+      <div class="text-color">{{ title }}</div>
+    </div>
+  </ng-template>
+
+  <!-- direita -->
+  <ng-template pTemplate="end">
+    <div class="flex align-items-center justify-content-end">
+      <!-- tema -->
+      <div class="layout-navbar-theme mx-4">
+        <button
+          pButton
+          pRipple
+          [icon]="iconTheme()"
+          class="p-button-rounded p-button-text text-color"
+          (click)="toggleTheme($event)"></button>
+      </div>
+
+      <!-- usuário -->
+      <p-avatar
+        shape="circle"
+        class="layout-navbar-avatar border-circle fe-outline fe-pointer"
+        image="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/250px-Angular_full_color_logo.svg.png"
+        (click)="toggleUser($event)"></p-avatar>
+
+      <!-- menu do tema -->
+      <p-menu #theme [popup]="true" [model]="menuTheme" append-to=".layout-navbar-theme"></p-menu>
+
+      <!-- menu do usuário -->
+      <p-menu #user [popup]="true" [model]="menuUser" append-to=".layout-navbar-avatar"></p-menu>
+    </div>
+  </ng-template>
+</p-menubar>
