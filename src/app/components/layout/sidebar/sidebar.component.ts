@@ -117,7 +117,7 @@ export class SidebarComponent implements OnInit {
   }
 
   collapse(): void {
-    const active = '.layout-sidebar .p-menuitem-link.router-link-active';
+    const active = '.sidebar .p-menuitem-link.router-link-active';
 
     setTimeout(() => {
       const collpase = document.querySelector<any>(active);

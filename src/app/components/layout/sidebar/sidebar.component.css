@@ -75,7 +75,7 @@
 }
 
 :host ::ng-deep .p-sidebar-footer div {
-  margin-top: -6px;
+  margin-top: -5px;
 }
 
 :host ::ng-deep .p-sidebar-footer div div {
