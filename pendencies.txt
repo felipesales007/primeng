@@ -1,0 +1,11 @@
+em src/app/components/layout/navbar/navbar.component.html
+photo ? photo : $assets('img/profile.png')
+
+em src/app/components/layout/sidebar/sidebar.component.ts
+change/watch variaveis
+
+em src/app/components/layout/navbar/navbar.component.html
+import theme from '@/components/Functions/Specific/Theme.vue';
+command: () => this.changeTheme(1)
+
+alterar codigo -> id
