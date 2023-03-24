@@ -35,6 +35,15 @@ export class SidebarComponent implements OnInit {
   }
 
   ngOnChanges(changes: SimpleChanges) {
+    const state = changes['state'];
+    const items = changes['items']?.currentValue;
+
+    if (state) {
+      this.visible = true;
+      this.collapse();
+    }
+
+    if (items?.length) this.list(items);
     console.log(changes);
   }
 

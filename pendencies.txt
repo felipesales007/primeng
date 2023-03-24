@@ -9,3 +9,5 @@ import theme from '@/components/Functions/Specific/Theme.vue';
 command: () => this.changeTheme(1)
 
 alterar codigo -> id
+
+resolver problema de testes

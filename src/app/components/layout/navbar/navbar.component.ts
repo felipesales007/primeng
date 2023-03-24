@@ -104,7 +104,7 @@ export class NavbarComponent {
       if (toggle) {
         // const item = toggle.querySelector(`.navbar-theme-${this.userTheme || 1}`);
         const item = toggle.querySelector(`.navbar-theme-1`);
-        item.classList.add(...['surface-hover', 'p-disabled']);
+        item?.classList.add(...['surface-hover', 'p-disabled']);
       }
     });
   }

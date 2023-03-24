@@ -16,10 +16,10 @@ export class AppComponent implements OnInit {
     perfil: [],
     nome: 'Felipe',
     email: 'felipesales007@hotmail.com',
-    foto: '',
+    foto: 'https://xsgames.co/randomusers/avatar.php?g=male',
     expira: '2025-12-31',
     empresa: 'Zen Digital',
-    logo: '',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/250px-Angular_full_color_logo.svg.png',
     tipo: '',
     token: '',
   };

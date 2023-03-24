@@ -11,12 +11,10 @@
   <p-panelMenu [model]="model"></p-panelMenu>
 
   <!-- rodapé -->
-  <div
-    *ngIf="footerTitle || footerLogo"
-    class="w-full surface-section absolute bottom-0 border-top-1 fe-border-theme">
+  <ng-template *ngIf="footerTitle || footerLogo" pTemplate="footer">
     <div class="flex align-items-center">
       <img *ngIf="footerLogo" [src]="footerLogo" class="mr-4" height="32" alt="" />
       <div>{{ footerTitle }}</div>
     </div>
-  </div>
+  </ng-template>
 </p-sidebar>
