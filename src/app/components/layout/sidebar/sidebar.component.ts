@@ -27,23 +27,26 @@ export class SidebarComponent implements OnInit {
 
   @Output() clickSidebar: EventEmitter<any> = new EventEmitter();
 
-  visible: boolean = true;
+  visible: boolean = false;
   model: any[] = [];
 
   ngOnInit(): void {
     this.list(this.items);
   }
 
-  ngOnChanges(changes: SimpleChanges) {
-    const state = changes['state'];
-    const items = changes['items']?.currentValue;
+  ngOnChanges(changes: SimpleChanges): void {
+    for (const name in changes) {
+      const item = changes[name];
+      const init = item.firstChange;
+      const value = item.currentValue;
 
-    if (state) {
-      this.visible = true;
-      this.collapse();
+      if (name === 'state' && !init) {
+        this.visible = true;
+        this.collapse();
+      }
+
+      if (name === 'items' && value && !value.length) this.list(value);
     }
-
-    if (!items?.length) this.list(items);
   }
 
   close(command: string, data: any): void {
@@ -121,7 +124,7 @@ export class SidebarComponent implements OnInit {
 
     setTimeout(() => {
       const collpase = document.querySelector<any>(active);
-      const open = collpase.parentElement.querySelector('[tabindex="0"]');
+      const open = collpase?.parentElement.querySelector('[tabindex="0"]');
 
       if (collpase && !open) {
         const submenu = collpase.parentElement.parentElement.parentElement;
