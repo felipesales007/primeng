@@ -11,3 +11,5 @@ command: () => this.changeTheme(1)
 alterar codigo -> id
 
 resolver problema de testes
+
+remover os :is nos css

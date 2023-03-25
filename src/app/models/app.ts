@@ -28,10 +28,17 @@ export interface Menu {
   object: MenuObject;
 }
 
-export interface MenuData {
+export interface MenuItemData {
   icone: string;
   label: string;
   rota: string;
+}
+
+export interface MenuData {
+  icone?: string;
+  label: string;
+  rota?: string;
+  itens?: MenuItemData[];
 }
 
 export interface MenuObject {

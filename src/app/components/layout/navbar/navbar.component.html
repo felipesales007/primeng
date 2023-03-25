@@ -29,7 +29,7 @@
 
   <!-- direita -->
   <ng-template pTemplate="end">
-    <div class="flex align-items-center justify-content-end">
+    <div class="flex align-items-center">
       <!-- tema -->
       <div class="layout-navbar-theme mx-4">
         <button
@@ -41,11 +41,12 @@
       </div>
 
       <!-- usuário -->
-      <p-avatar
-        shape="circle"
+      <img
+        [src]="photo"
         class="layout-navbar-avatar border-circle fe-outline fe-pointer"
-        [image]="photo"
-        (click)="toggleUser($event)"></p-avatar>
+        height="32"
+        alt=""
+        (click)="toggleUser($event)" />
 
       <!-- menu do tema -->
       <p-menu #theme [popup]="true" [model]="menuTheme" append-to=".layout-navbar-theme"></p-menu>

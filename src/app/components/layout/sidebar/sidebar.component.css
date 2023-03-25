@@ -1,10 +1,6 @@
 :host ::ng-deep .p-sidebar-header {
   display: flex;
   justify-content: space-between;
-}
-
-:host ::ng-deep .p-sidebar-header,
-:host ::ng-deep .absolute {
   padding: 10.5px 16px !important;
 }
 
@@ -17,41 +13,45 @@
   margin-bottom: 54px;
 }
 
-:host ::ng-deep .p-panelmenu-header-content {
-  background: transparent !important;
-  border: none !important;
-}
-
 :host ::ng-deep .p-panelmenu-header a {
+  background: transparent !important;
   font-weight: normal !important;
+  border: none !important;
+  border-radius: 0 !important;
 }
 
 :host ::ng-deep .p-panelmenu-header a[href] {
   padding-left: 15px !important;
 }
 
-:host ::ng-deep .p-panelmenu-header a[href].router-link-active {
+:host ::ng-deep .p-panelmenu-header a[href].p-menuitem-link-active {
   padding-left: 10px !important;
 }
 
-:host ::ng-deep .p-panelmenu-header a :is(.pi-chevron-down, .pi-chevron-right) {
+:host ::ng-deep .p-panelmenu-header a .pi-chevron-down,
+:host ::ng-deep .p-panelmenu-header a .pi-chevron-right {
   margin-right: 11px !important;
   margin-left: -3px;
 }
 
-:host ::ng-deep .p-menuitem a.router-link-active {
+:host ::ng-deep .p-menuitem a.p-menuitem-link-active {
   padding-left: 37px !important;
 }
 
-:host ::ng-deep :is(.p-panelmenu-header, .p-menuitem):hover a {
+:host ::ng-deep .p-panelmenu-header:hover a,
+:host ::ng-deep .p-menuitem:hover a {
   background: var(--surface-hover) !important;
 }
 
-:host ::ng-deep :is(.p-panelmenu-header, .p-menuitem) a :is(.p-menuitem-icon, .p-menuitem-text) {
+:host ::ng-deep .p-panelmenu-header a .p-menuitem-icon,
+:host ::ng-deep .p-panelmenu-header a .p-menuitem-text,
+:host ::ng-deep .p-menuitem a .p-menuitem-icon,
+:host ::ng-deep .p-menuitem a .p-menuitem-text {
   color: var(--text-color) !important;
 }
 
-:host ::ng-deep :is(.p-panelmenu-header, .p-menuitem) a.router-link-active {
+:host ::ng-deep .p-panelmenu-header a.p-menuitem-link-active,
+:host ::ng-deep .p-menuitem a.p-menuitem-link-active {
   border-left: 5px solid var(--primary-color) !important;
 }
 
