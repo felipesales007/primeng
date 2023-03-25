@@ -5,4 +5,14 @@ import { Component } from '@angular/core';
   templateUrl: './inicio.component.html',
   styleUrls: ['./inicio.component.css'],
 })
-export class InicioComponent {}
+export class InicioComponent {
+  header = {
+    title: 'Início',
+  };
+  welcome = {
+    title: 'Bem vindo',
+    description:
+      'Ao seu painel administrativo da Administrativo, aqui você pode gerenciar sua empresa de forma simples e rápida.',
+    image: 'https://uploaddeimagens.com.br/images/004/406/698/original/welcome.png',
+  };
+}
