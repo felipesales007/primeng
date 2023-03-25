@@ -40,13 +40,13 @@ export class NavbarComponent {
     {
       label: 'Perfil',
       icon: 'pi pi-user',
-      class: 'layout-navbar',
+      styleClass: 'layout-navbar',
       command: () => this.router.navigate(['/']),
     },
     {
       label: 'Contato',
       icon: 'pi pi-envelope',
-      class: 'layout-navbar',
+      styleClass: 'layout-navbar',
       command: () => this.router.navigate(['/']),
     },
     {
@@ -55,7 +55,7 @@ export class NavbarComponent {
     {
       label: 'Sair',
       icon: 'pi pi-sign-out',
-      class: 'layout-navbar logout',
+      styleClass: 'layout-navbar logout',
       command: () => this.router.navigate(['/sair']),
     },
   ];
