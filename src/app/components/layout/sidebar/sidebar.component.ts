@@ -43,8 +43,7 @@ export class SidebarComponent implements OnInit {
       this.collapse();
     }
 
-    if (items?.length) this.list(items);
-    console.log(changes);
+    if (!items?.length) this.list(items);
   }
 
   close(command: string, data: any): void {
@@ -53,7 +52,7 @@ export class SidebarComponent implements OnInit {
   }
 
   list(data: any[]): void {
-    data.forEach((item: any) => {
+    data?.forEach((item: any) => {
       if (item[this.object.items]) {
         this.model.push({
           icon: item[this.object.icon] ? `pi pi-fw pi-${item[this.object.icon]}` : '',
@@ -91,7 +90,7 @@ export class SidebarComponent implements OnInit {
         label: data[this.object.label],
         disabled: data[this.object.disabled],
         visible: data[this.object.visible],
-        to: data[this.object.to],
+        routerLink: data[this.object.to],
         command: () => this.close(data[this.object.to], data),
       };
     } else if (type === 'command') {

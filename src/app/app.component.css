@@ -4,6 +4,6 @@
 }
 
 .main-panel {
-  min-height: calc(100vh - 144px);
+  min-height: calc(100vh - 126px);
   margin: 64px 8px 8px 8px;
 }
