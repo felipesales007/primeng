@@ -1,0 +1,23 @@
+.w-full {
+  padding-top: 1px;
+}
+
+:host {
+  ::ng-deep {
+    .p-menubar {
+      height: 54px;
+      padding: 16px 16px 17px 16px;
+      box-shadow: 0 0 1px 0 rgb(0 0 0 / 75%);
+      border-radius: 0;
+    }
+
+    .p-menubar-button {
+      display: none !important;
+    }
+
+    .p-menubar-start,
+    .p-menubar-end {
+      width: 50%;
+    }
+  }
+}

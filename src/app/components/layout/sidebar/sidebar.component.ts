@@ -4,7 +4,7 @@ import { Menu, MenuObject } from 'src/app/models/components/layout/sidebar';
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
-  styleUrls: ['./sidebar.component.css'],
+  styleUrls: ['./sidebar.component.scss'],
 })
 export class SidebarComponent implements OnInit {
   @Input() state: boolean = false; // Abertura e fechamento

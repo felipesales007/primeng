@@ -13,3 +13,5 @@ alterar codigo -> id
 resolver problema de testes
 
 remover os :is nos css
+
+css -> scss

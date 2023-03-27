@@ -5,7 +5,11 @@
   "projects": {
     "primeng": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -18,14 +22,15 @@
             "main": "src/main.ts",
             "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
             "assets": ["src/assets/img/favicon.ico", "src/assets"],
             "styles": [
               "node_modules/primeng/resources/primeng.min.css",
               "node_modules/primeicons/primeicons.css",
               "node_modules/primeflex/primeflex.min.css",
               "node_modules/primeng/resources/themes/bootstrap4-light-blue/theme.css",
-              "src/assets/css/edit.css",
-              "src/assets/css/styles.css"
+              "src/assets/scss/edit.scss",
+              "src/assets/scss/styles.scss"
             ],
             "scripts": []
           },
@@ -79,8 +84,9 @@
           "options": {
             "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "tsconfig.spec.json",
+            "inlineStyleLanguage": "scss",
             "assets": ["src/assets/img/favicon.ico", "src/assets"],
-            "styles": ["src/assets/css/styles.css", "src/assets/css/edit.css"],
+            "styles": ["src/assets/scss/styles.scss", "src/assets/scss/edit.scss"],
             "scripts": []
           }
         }

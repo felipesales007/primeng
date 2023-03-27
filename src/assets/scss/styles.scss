@@ -52,8 +52,10 @@
   text-decoration: none !important;
 }
 
-.fe-hover:hover {
-  opacity: 0.8;
+.fe-hover {
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .fe-on-modal {
@@ -146,22 +148,24 @@
   outline: 1px solid #dee2e6;
 }
 
-.dark .fe-outline {
-  outline: 1px solid #3f4b5b;
-}
-
 .fe-outline-error {
   outline: 1px solid #dc3545;
-}
-
-.dark .fe-outline-error {
-  outline: 1px solid #f19ea6;
 }
 
 .fe-border-theme {
   border-color: #dee2e6;
 }
 
-.dark .fe-border-theme {
-  border-color: #3f4b5b;
+.dark {
+  .fe-outline {
+    outline: 1px solid #3f4b5b;
+  }
+
+  .fe-outline-error {
+    outline: 1px solid #f19ea6;
+  }
+
+  .fe-border-theme {
+    border-color: #3f4b5b;
+  }
 }
