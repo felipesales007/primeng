@@ -24,7 +24,6 @@ import { DockModule } from 'primeng/dock';
 import { DragDropModule } from 'primeng/dragdrop';
 import { DropdownModule } from 'primeng/dropdown';
 import { DynamicDialogModule } from 'primeng/dynamicdialog';
-import { EditorModule } from 'primeng/editor';
 import { FieldsetModule } from 'primeng/fieldset';
 import { FileUploadModule } from 'primeng/fileupload';
 import { GalleriaModule } from 'primeng/galleria';
@@ -115,7 +114,6 @@ import { RippleModule } from 'primeng/ripple';
     DragDropModule,
     DropdownModule,
     DynamicDialogModule,
-    EditorModule,
     FieldsetModule,
     FileUploadModule,
     GalleriaModule,
@@ -204,7 +202,6 @@ import { RippleModule } from 'primeng/ripple';
     DragDropModule,
     DropdownModule,
     DynamicDialogModule,
-    EditorModule,
     FieldsetModule,
     FileUploadModule,
     GalleriaModule,
