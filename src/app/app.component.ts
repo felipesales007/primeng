@@ -10,7 +10,7 @@ import { Company, Menu, User } from './models/app';
 export class AppComponent implements OnInit {
   page: boolean = true;
   user: User = {
-    codigo: 1,
+    id: 1,
     tema: 1,
     listPerfil: [],
     perfil: [],

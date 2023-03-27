@@ -1,10 +1,10 @@
 export interface Perfil {
-  codigo: number | string;
+  id: number | string;
   name: string;
 }
 
 export interface User {
-  codigo: number | string;
+  id: number | string;
   tema: number;
   listPerfil: Perfil[];
   perfil: number[];
