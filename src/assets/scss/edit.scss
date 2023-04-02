@@ -431,6 +431,11 @@ input.only-focus[type='datetime-local']::-webkit-calendar-picker-indicator {
   background: transparent !important;
 }
 
+.p-toast-summary,
+.p-toast-detail {
+  word-break: break-word;
+}
+
 @media screen and (min-width: 767px) {
   .p-datatable .action {
     padding: 0 !important;
